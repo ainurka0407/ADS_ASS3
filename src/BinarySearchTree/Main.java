@@ -14,9 +14,9 @@ public class Main {
         bst.put(60, "Value60");
         bst.put(80, "Value80");
 
-        System.out.println("Retrieving key 50: " + bst.get(50)); // Output: Value50
-        System.out.println("Retrieving key 20: " + bst.get(20)); // Output: Value20
-        System.out.println("Retrieving key 70: " + bst.get(70)); // Output: Value70
+        System.out.println("Retrieving key 50: " + bst.get(50));
+        System.out.println("Retrieving key 20: " + bst.get(20));
+        System.out.println("Retrieving key 70: " + bst.get(70));
 
         System.out.println("In-order traversal:");
         Iterator<BST<Integer, String>.Node> iterator = bst.iterator();

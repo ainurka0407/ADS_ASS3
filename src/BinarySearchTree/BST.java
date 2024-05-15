@@ -1,8 +1,6 @@
 package BinarySearchTree;
 
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Stack;
 
 public class BST<K extends Comparable<K>, V> implements Iterable<BST<K, V>.Node> {
@@ -56,7 +54,7 @@ public class BST<K extends Comparable<K>, V> implements Iterable<BST<K, V>.Node>
         else return x;
     }
 
-    // Delete a key-value pair from the BST
+
     public void delete(K key) {
         root = delete(root, key);
     }
@@ -88,7 +86,7 @@ public class BST<K extends Comparable<K>, V> implements Iterable<BST<K, V>.Node>
         return x;
     }
 
-    // Iterator for in-order traversal
+
     @Override
     public Iterator<Node> iterator() {
         return new BSTIterator(root);
